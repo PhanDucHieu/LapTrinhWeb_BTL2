@@ -1,0 +1,234 @@
+label span { color: red; }
+.navbar-brand{
+    padding: 0 1em;
+}
+.navbar{
+    height: 50px;
+    position: relative;
+}
+.navbar-brand img{
+    width: 180px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.nav-item{
+    text-align: center;
+}
+.navbar-brand{
+    text-align: center;
+    margin-top: -15px;
+    position: absolute;
+    left: 50%;
+    /*margin-left: -50px !important;  !* 50% of your logo width *!*/
+    transform:translateX(-50%);
+    display: block;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#notfound {
+    position: relative;
+    height: 100vh;
+}
+
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.notfound {
+    max-width: 520px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.notfound .notfound-404 {
+    position: relative;
+    height: 200px;
+    margin: 0px auto 20px;
+    z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 236px;
+    font-weight: 200;
+    margin: 0px;
+    color: #211b19;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.notfound .notfound-404 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #211b19;
+    background: #fff;
+    padding: 10px 5px;
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+
+.notfound a {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 23px;
+    background: #ff6300;
+    font-size: 18px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.notfound a:hover {
+    color: #ff6300;
+    background: #211b19;
+}
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h1 {
+        font-size: 148px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .notfound .notfound-404 {
+        height: 148px;
+        margin: 0px auto 10px;
+    }
+    .notfound .notfound-404 h1 {
+        font-size: 86px;
+    }
+    .notfound .notfound-404 h2 {
+        font-size: 16px;
+    }
+    .notfound a {
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+.img-sample{
+    width: 10%;
+    height: auto;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+.showCart{
+    position: fixed;
+    border-radius: 10px;
+    right: 10px;
+    top: 41px;
+
+    padding: 10px;
+    border: 1px #959ea9;
+    width: 30%;
+    display: none;
+    /*display: none !important;*/
+
+
+    max-height: 75%;
+
+    overflow-y: scroll ;
+
+    -ms-overflow-style: none;
+
+
+}
+.showCart::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+
